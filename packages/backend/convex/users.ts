@@ -24,6 +24,8 @@ export const add = mutation({
       throw new Error("No Organization Detected")
     }
 
+    throw new Error("Tracking Test")
+
     const userId = await ctx.db.insert("users", {
       name: "Delilha",
     });
